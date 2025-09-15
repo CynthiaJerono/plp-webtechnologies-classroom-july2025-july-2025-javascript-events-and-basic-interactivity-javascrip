@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page</h1>
+    <p>JavaScript Event Handling, Interactive Elements & Form Validation</p>
+  </header>
+
+  <div class="container">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <button id="theme-toggle-btn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- Counter Game Section -->
+    <section id="counter-game">
+      <h2>Counter Game</h2>
+      <p>Click the buttons to increase or decrease the counter:</p>
+      <div class="counter">
+        <button id="decrease-btn">-</button>
+        <div class="counter-value" id="counter-value">0</div>
+        <button id="increase-btn">+</button>
+      </div>
+      <button id="reset-btn">Reset Counter</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What is JavaScript?</h3>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>JavaScript is a programming language that enables interactive web pages. It is an essential part of web applications and is supported by all modern web browsers.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What are JavaScript events?</h3>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>JavaScript events are actions that occur on web pages, such as clicks, mouse movements, keyboard inputs, and form submissions. Developers can use event listeners to respond to these events.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>What is form validation?</h3>
+          <span>+</span>
+        </div>
+        <div class="faq-answer">
+          <p>Form validation is the process of ensuring that user input is correct and complete before submitting it to a server. JavaScript can validate forms in real-time, providing immediate feedback to users.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Validation Section -->
+    <section id="form-section">
+      <h2>Form Validation</h2>
+      <p>Please fill out the form below. All fields are required.</p>
+      <form id="validation-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name">
+          <div class="error" id="name-error">Please enter a valid name (letters and spaces only)</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email">
+          <div class="error" id="email-error">Please enter a valid email address</div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password">
+          <div class="error" id="password-error">Password must be at least 8 characters with one uppercase letter, one number, and one special character</div>
+        </div>
+        <div class="form-group">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+          <div class="error" id="confirm-password-error">Passwords do not match</div>
+        </div>
+        <button type="submit">Submit Form</button>
+      </form>
+      <div class="success-message" id="success-message">
+        Form submitted successfully!
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Interactive Web Page Assignment &copy; 2023</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
